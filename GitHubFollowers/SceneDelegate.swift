@@ -15,25 +15,40 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = ViewController()
+        window?.rootViewController = createTabBar()
         window?.makeKeyAndVisible()
     }
 
-    func sceneDidDisconnect(_ scene: UIScene) {
+    func createSearchNavigationController() -> UINavigationController {
+        let searchViewController = SearchViewController()
+        searchViewController.title = "Search"
+        searchViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+        return UINavigationController(rootViewController: searchViewController)
     }
-
-    func sceneDidBecomeActive(_ scene: UIScene) {
+    
+    func createFavoritesNavigationController() -> UINavigationController {
+        let favoritesViewController = FavoritesListViewController()
+        favoritesViewController.title = "Favorites"
+        favoritesViewController.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
+        return UINavigationController(rootViewController: favoritesViewController)
     }
-
-    func sceneWillResignActive(_ scene: UIScene) {
+    
+    func createTabBar() -> UITabBarController {
+        let tabBar = UITabBarController()
+        UITabBar.appearance().tintColor = .systemGreen
+        tabBar.viewControllers = [createSearchNavigationController(), createFavoritesNavigationController()]
+        return tabBar
     }
+    
+    func sceneDidDisconnect(_ scene: UIScene) {}
 
-    func sceneWillEnterForeground(_ scene: UIScene) {
-    }
+    func sceneDidBecomeActive(_ scene: UIScene) {}
 
-    func sceneDidEnterBackground(_ scene: UIScene) {
-    }
+    func sceneWillResignActive(_ scene: UIScene) {}
 
+    func sceneWillEnterForeground(_ scene: UIScene) {}
+
+    func sceneDidEnterBackground(_ scene: UIScene) {}
 
 }
 
