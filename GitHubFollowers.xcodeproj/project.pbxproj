@@ -16,6 +16,7 @@
 		740740BC2B6C1E2300AF5474 /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740740BB2B6C1E2300AF5474 /* FavoritesListViewController.swift */; };
 		740740BE2B6C2C4A00AF5474 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740740BD2B6C2C4900AF5474 /* GFButton.swift */; };
 		740740C02B6C49A600AF5474 /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740740BF2B6C49A600AF5474 /* GFTextField.swift */; };
+		740740C22B6C560400AF5474 /* FollowerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740740C12B6C560400AF5474 /* FollowerListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		740740BB2B6C1E2300AF5474 /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
 		740740BD2B6C2C4900AF5474 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		740740BF2B6C49A600AF5474 /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
+		740740C12B6C560400AF5474 /* FollowerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				740740BB2B6C1E2300AF5474 /* FavoritesListViewController.swift */,
 				740740BD2B6C2C4900AF5474 /* GFButton.swift */,
 				740740BF2B6C49A600AF5474 /* GFTextField.swift */,
+				740740C12B6C560400AF5474 /* FollowerListViewController.swift */,
 			);
 			path = GitHubFollowers;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				740740C02B6C49A600AF5474 /* GFTextField.swift in Sources */,
 				740740BA2B6C1DD900AF5474 /* SearchViewController.swift in Sources */,
 				740740BE2B6C2C4A00AF5474 /* GFButton.swift in Sources */,
+				740740C22B6C560400AF5474 /* FollowerListViewController.swift in Sources */,
 				7407408A2B6C131F00AF5474 /* AppDelegate.swift in Sources */,
 				740740BC2B6C1E2300AF5474 /* FavoritesListViewController.swift in Sources */,
 				7407408C2B6C131F00AF5474 /* SceneDelegate.swift in Sources */,
