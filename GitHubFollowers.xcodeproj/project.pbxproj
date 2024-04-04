@@ -24,12 +24,15 @@
 		740740D12B6D9B0800AF5474 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740740D02B6D9B0800AF5474 /* Follower.swift */; };
 		740740D32B6D9BCA00AF5474 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740740D22B6D9BCA00AF5474 /* User.swift */; };
 		740740D62B6DA0C600AF5474 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740740D52B6DA0C600AF5474 /* NetworkManager.swift */; };
+		74383ABA2BBDD2430031BB0C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74383AB92BBDD2420031BB0C /* Constants.swift */; };
 		7488B6E62B910D33003AF2E6 /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7488B6E52B910D33003AF2E6 /* GFError.swift */; };
 		7488B6E92B911271003AF2E6 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7488B6E82B911271003AF2E6 /* FollowerCell.swift */; };
 		7488B6EB2B9112F4003AF2E6 /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7488B6EA2B9112F4003AF2E6 /* GFAvatarImageView.swift */; };
 		7488B6ED2B98E1EE003AF2E6 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7488B6EC2B98E1ED003AF2E6 /* UIHelper.swift */; };
 		7488B6F52B9B8344003AF2E6 /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7488B6F42B9B8344003AF2E6 /* GFEmptyStateView.swift */; };
 		7488B6F72B9B8C08003AF2E6 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7488B6F62B9B8C08003AF2E6 /* UserInfoViewController.swift */; };
+		7488B6F92B9B9E6B003AF2E6 /* GFUserInfoHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7488B6F82B9B9E6B003AF2E6 /* GFUserInfoHeaderViewController.swift */; };
+		7488B6FB2B9B9ED8003AF2E6 /* GFSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7488B6FA2B9B9ED8003AF2E6 /* GFSecondaryTitleLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,12 +66,15 @@
 		740740D02B6D9B0800AF5474 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		740740D22B6D9BCA00AF5474 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		740740D52B6DA0C600AF5474 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		74383AB92BBDD2420031BB0C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7488B6E52B910D33003AF2E6 /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
 		7488B6E82B911271003AF2E6 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		7488B6EA2B9112F4003AF2E6 /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
 		7488B6EC2B98E1ED003AF2E6 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		7488B6F42B9B8344003AF2E6 /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
 		7488B6F62B9B8C08003AF2E6 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		7488B6F82B9B9E6B003AF2E6 /* GFUserInfoHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFUserInfoHeaderViewController.swift; sourceTree = "<group>"; };
+		7488B6FA2B9B9ED8003AF2E6 /* GFSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFSecondaryTitleLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +202,7 @@
 			children = (
 				7488B6E52B910D33003AF2E6 /* GFError.swift */,
 				7488B6EC2B98E1ED003AF2E6 /* UIHelper.swift */,
+				74383AB92BBDD2420031BB0C /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -244,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				740740C72B6C623200AF5474 /* GFAlertViewController.swift */,
+				7488B6F82B9B9E6B003AF2E6 /* GFUserInfoHeaderViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -251,6 +259,7 @@
 		7488B6F32B9B82C9003AF2E6 /* Labels */ = {
 			isa = PBXGroup;
 			children = (
+				7488B6FA2B9B9ED8003AF2E6 /* GFSecondaryTitleLabel.swift */,
 				740740C52B6C615F00AF5474 /* GFBodyLabel.swift */,
 				740740C32B6C5E3E00AF5474 /* GFTitleLabel.swift */,
 			);
@@ -363,14 +372,17 @@
 				740740C02B6C49A600AF5474 /* GFTextField.swift in Sources */,
 				740740BA2B6C1DD900AF5474 /* SearchViewController.swift in Sources */,
 				7488B6ED2B98E1EE003AF2E6 /* UIHelper.swift in Sources */,
+				74383ABA2BBDD2430031BB0C /* Constants.swift in Sources */,
 				7488B6EB2B9112F4003AF2E6 /* GFAvatarImageView.swift in Sources */,
 				740740BE2B6C2C4A00AF5474 /* GFButton.swift in Sources */,
+				7488B6F92B9B9E6B003AF2E6 /* GFUserInfoHeaderViewController.swift in Sources */,
 				740740C22B6C560400AF5474 /* FollowerListViewController.swift in Sources */,
 				7488B6E92B911271003AF2E6 /* FollowerCell.swift in Sources */,
 				7488B6E62B910D33003AF2E6 /* GFError.swift in Sources */,
 				740740C62B6C615F00AF5474 /* GFBodyLabel.swift in Sources */,
 				740740D12B6D9B0800AF5474 /* Follower.swift in Sources */,
 				740740C42B6C5E3E00AF5474 /* GFTitleLabel.swift in Sources */,
+				7488B6FB2B9B9ED8003AF2E6 /* GFSecondaryTitleLabel.swift in Sources */,
 				7488B6F52B9B8344003AF2E6 /* GFEmptyStateView.swift in Sources */,
 				740740D62B6DA0C600AF5474 /* NetworkManager.swift in Sources */,
 				7407408A2B6C131F00AF5474 /* AppDelegate.swift in Sources */,
