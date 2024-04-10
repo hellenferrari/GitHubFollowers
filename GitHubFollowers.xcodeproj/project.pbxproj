@@ -44,6 +44,7 @@
 		74E6B1942BC5B1F300C6EC7D /* GFAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E6B1932BC5B1F300C6EC7D /* GFAlertContainerView.swift */; };
 		74E6B1962BC5B96800C6EC7D /* GFDataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E6B1952BC5B96800C6EC7D /* GFDataLoadingVC.swift */; };
 		74E6B1982BC6FFAF00C6EC7D /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E6B1972BC6FFAF00C6EC7D /* UIView+Ext.swift */; };
+		74E6B19A2BC70D6100C6EC7D /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E6B1992BC70D6100C6EC7D /* UITableView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		74E6B1932BC5B1F300C6EC7D /* GFAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertContainerView.swift; sourceTree = "<group>"; };
 		74E6B1952BC5B96800C6EC7D /* GFDataLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFDataLoadingVC.swift; sourceTree = "<group>"; };
 		74E6B1972BC6FFAF00C6EC7D /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		74E6B1992BC70D6100C6EC7D /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 				740740C92B6C695700AF5474 /* UIViewController+Extension.swift */,
 				74E6B1882BC0745200C6EC7D /* Date+Ext.swift */,
 				74E6B1972BC6FFAF00C6EC7D /* UIView+Ext.swift */,
+				74E6B1992BC70D6100C6EC7D /* UITableView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				7407408A2B6C131F00AF5474 /* AppDelegate.swift in Sources */,
 				74E6B1812BBF192800C6EC7D /* GFItemInfoViewController.swift in Sources */,
 				7488B6F72B9B8C08003AF2E6 /* UserInfoViewController.swift in Sources */,
+				74E6B19A2BC70D6100C6EC7D /* UITableView+Ext.swift in Sources */,
 				740740BC2B6C1E2300AF5474 /* FavoritesListViewController.swift in Sources */,
 				7407408C2B6C131F00AF5474 /* SceneDelegate.swift in Sources */,
 			);
