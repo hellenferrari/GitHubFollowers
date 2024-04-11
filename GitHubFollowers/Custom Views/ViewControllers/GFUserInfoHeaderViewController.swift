@@ -26,12 +26,13 @@ class GFUserInfoHeaderViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addSubviews()
+        view.addSubviews(avatarImageView, usernameLabel, nameLabel, locationLabel, bioLabel)
         layoutUI()
+        configureUIElements()
     }
     
-    func congireUIElements() {
-        downloadAvatarImage()
+    func configureUIElements() {
+        avatarImageView.downloadImage(fromURL: user.avatarUrl)
         usernameLabel.text = user.login
         nameLabel.text = user.name ?? ""
         locationLabel.text = user.location ?? "No Location"
@@ -41,30 +42,10 @@ class GFUserInfoHeaderViewController: UIViewController {
         locationImageView.image = SFSymbols.location
         locationImageView.tintColor = .secondaryLabel
     }
-    
-    func downloadAvatarImage() {
-        NetworkManager.shared.downloadImage(from: user.avatarUrl) { [weak self] image in
-            guard let self = self else { return }
-            DispatchQueue.main.async {
-                self.avatarImageView.image = image
-            }
-        }
-    }
-    
-    func addSubviews() {
-        view.addSubviews(avatarImageView, usernameLabel, nameLabel, locationLabel, bioLabel)
-        
-        // Using Variadic Parameter instead of the one below:
-//        view.addSubview(avatarImageView)
-//        view.addSubview(usernameLabel)
-//        view.addSubview(nameLabel)
-//        view.addSubview(locationLabel)
-//        view.addSubview(bioLabel)
-    }
-    
+
     func layoutUI() {
         let padding: CGFloat = 20
-        let textImagePadding: CGFloat = 12
+        let textImagePadding: CGFloat = 24
         locationImageView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -83,11 +64,11 @@ class GFUserInfoHeaderViewController: UIViewController {
             nameLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             nameLabel.heightAnchor.constraint(equalToConstant: 20),
 
-//            locationImageView.bottomAnchor.constraint(equalTo: avatarImageView.bottomAnchor),
-//            locationImageView.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: textImagePadding),
+            locationImageView.bottomAnchor.constraint(equalTo: avatarImageView.bottomAnchor),
+            locationImageView.leadingAnchor.constraint(equalTo: avatarImageView.trailingAnchor, constant: textImagePadding),
 //            locationImageView.widthAnchor.constraint(equalToConstant: 20),
 //            locationImageView.heightAnchor.constraint(equalToConstant: 20),
-
+//
 //            locationLabel.centerYAnchor.constraint(equalTo: locationImageView.centerYAnchor),
 //            locationLabel.leadingAnchor.constraint(equalTo: locationImageView.trailingAnchor, constant: 5),
 //            locationLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor),

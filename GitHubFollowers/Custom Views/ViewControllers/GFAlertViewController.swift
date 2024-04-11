@@ -32,6 +32,7 @@ class GFAlertViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.black.withAlphaComponent(0.75)
         view.addSubviews(containerView, titleLabel, actionButton, messageLabel) // using Variadic Parameter
+        
         configureContainerView()
         configureTitleLabel()
         configureActionButton()
