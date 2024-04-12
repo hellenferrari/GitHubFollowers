@@ -142,14 +142,14 @@
 		740740882B6C131F00AF5474 /* GitHubFollowers */ = {
 			isa = PBXGroup;
 			children = (
-				740740CE2B6D968100AF5474 /* Support */,
 				7488B6E42B910D18003AF2E6 /* Utilities */,
-				740740D42B6DA0AD00AF5474 /* Managers */,
+				74AA77FB2BC9B345000B57B5 /* Networking */,
+				74AA77FC2BC9B353000B57B5 /* Persistence */,
 				740740CF2B6D9AF700AF5474 /* Model */,
+				74AA77FD2BC9B395000B57B5 /* UI */,
+				740740CE2B6D968100AF5474 /* Support */,
 				740740972B6C132900AF5474 /* Info.plist */,
 				740740CD2B6D967500AF5474 /* Extensions */,
-				740740CC2B6D966400AF5474 /* Custom Views */,
-				740740CB2B6D965300AF5474 /* Screens */,
 			);
 			path = GitHubFollowers;
 			sourceTree = "<group>";
@@ -173,19 +173,16 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		740740CC2B6D966400AF5474 /* Custom Views */ = {
+		740740CC2B6D966400AF5474 /* Custom Controls */ = {
 			isa = PBXGroup;
 			children = (
-				74E6B1902BC5A50000C6EC7D /* TabBarControllers */,
 				7488B6F32B9B82C9003AF2E6 /* Labels */,
-				7488B6F22B9B82BD003AF2E6 /* ViewControllers */,
 				7488B6F12B9B82B5003AF2E6 /* ImageViews */,
 				7488B6F02B9B82AD003AF2E6 /* TextFields */,
 				7488B6EF2B9B82A4003AF2E6 /* Buttons */,
 				7488B6EE2B9B829B003AF2E6 /* Views */,
-				7488B6E72B91124B003AF2E6 /* Cells */,
 			);
-			path = "Custom Views";
+			path = "Custom Controls";
 			sourceTree = "<group>";
 		};
 		740740CD2B6D967500AF5474 /* Extensions */ = {
@@ -217,15 +214,6 @@
 				740740D22B6D9BCA00AF5474 /* User.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		740740D42B6DA0AD00AF5474 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				740740D52B6DA0C600AF5474 /* NetworkManager.swift */,
-				74E6B18C2BC0B75E00C6EC7D /* PersistenceManager.swift */,
-			);
-			path = Managers;
 			sourceTree = "<group>";
 		};
 		7488B6E42B910D18003AF2E6 /* Utilities */ = {
@@ -309,6 +297,34 @@
 				74AA77F92BC9962A000B57B5 /* FollowerView.swift */,
 			);
 			path = FollowerCell;
+			sourceTree = "<group>";
+		};
+		74AA77FB2BC9B345000B57B5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				740740D52B6DA0C600AF5474 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		74AA77FC2BC9B353000B57B5 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				74E6B18C2BC0B75E00C6EC7D /* PersistenceManager.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		74AA77FD2BC9B395000B57B5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				74E6B1902BC5A50000C6EC7D /* TabBarControllers */,
+				7488B6F22B9B82BD003AF2E6 /* ViewControllers */,
+				740740CC2B6D966400AF5474 /* Custom Controls */,
+				7488B6E72B91124B003AF2E6 /* Cells */,
+				740740CB2B6D965300AF5474 /* Screens */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		74E6B1862BBF1E6E00C6EC7D /* ItemInfoVCs */ = {
