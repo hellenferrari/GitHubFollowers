@@ -87,9 +87,9 @@ class UserInfoViewController: GFDataLoadingVC {
             ])
         }
         
-        headerView.translatesAutoresizingMaskIntoConstraints = false
-        itemViewOne.translatesAutoresizingMaskIntoConstraints = false
-        itemViewTwo.translatesAutoresizingMaskIntoConstraints = false
+//        headerView.translatesAutoresizingMaskIntoConstraints = false
+//        itemViewOne.translatesAutoresizingMaskIntoConstraints = false
+//        itemViewTwo.translatesAutoresizingMaskIntoConstraints = false
       
         
         NSLayoutConstraint.activate([
@@ -103,7 +103,7 @@ class UserInfoViewController: GFDataLoadingVC {
             itemViewTwo.heightAnchor.constraint(equalToConstant: itemHeight),
             
             dateLabel.topAnchor.constraint(equalTo: itemViewTwo.bottomAnchor, constant: padding),
-            dateLabel.heightAnchor.constraint(equalToConstant: 18)
+            dateLabel.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
     

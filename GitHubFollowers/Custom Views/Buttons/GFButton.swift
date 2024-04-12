@@ -28,7 +28,7 @@ class GFButton: UIButton {
     
     func set(color: UIColor, title: String, systemImageName: String) {
         configuration?.baseBackgroundColor = color
-        configuration?.baseForegroundColor = .white
+        configuration?.baseForegroundColor = color
         configuration?.title = title
         
         configuration?.image = UIImage(systemName: systemImageName)

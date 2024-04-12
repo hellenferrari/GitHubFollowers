@@ -5,7 +5,7 @@
 import UIKit
 
 enum SFSymbols {
-    static let location = UIImage(systemName: "mapping.and.ellipse")
+    static let location = UIImage(systemName: "mappin.and.ellipse")
     static let repos = UIImage(systemName: "folder")
     static let gists = UIImage(systemName: "text.alignleft")
     static let followers = UIImage(systemName: "heart")
@@ -33,8 +33,5 @@ enum DeviceTypes {
     static let isiPhoneSE = idiom == .phone && ScreenSize.maxLenght == 568.0
     static let isiPhone8Standard = idiom == .phone && ScreenSize.maxLenght == 667.0 && nativeScale == scale
     // ...
-    
-//    static func isiPhoneXAspectRatio() -> Bool {
-//        return isiPhoneX || isiPhoneXsMaxAndXr
-//    }
+
 }
